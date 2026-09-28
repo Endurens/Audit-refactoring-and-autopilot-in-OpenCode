@@ -14,7 +14,7 @@
     <div class="container">
       <div class="progress-row">
         <span class="progress-label">Прогресс лекции</span>
-        <span class="progress-count" id="progressCount">0/4 шага</span>
+        <span class="progress-count" id="progressCount">0/5 шагов</span>
       </div>
       <div class="progress-track">
         <div class="progress-fill" id="progressFill" style="width:0%"></div>
@@ -29,7 +29,7 @@
     <section class="hero animate-fade-up">
       <div class="pill"><span class="dot"></span><span>AGENTS.md × Автопилот opencode</span></div>
       <h1>Аудит, рефакторинг и<br /><span class="shimmer-text">автопилот в opencode</span></h1>
-      <p class="lead">opencode читает AGENTS.md в корне проекта и следует его правилам в каждой сессии — это «постоянная память». Автопилот собран из трёх вещей: жёсткие правила качества в AGENTS.md, разрешения в opencode.json, чтобы opencode не спрашивал подтверждение на каждый шаг, и запрет объявлять «готово» без самопроверки. Отмечайте шаги по мере выполнения.</p>
+      <p class="lead">opencode читает AGENTS.md в корне проекта и следует его правилам в каждой сессии — это «постоянная память». Автопилот собран из трёх вещей: жёсткие правила качества в AGENTS.md, разрешения в opencode.json, чтобы opencode не спрашивал подтверждение на каждый шаг, и запрет объявлять «готово» без самопроверки. Рефакторинг идёт в отдельной ветке refactor/* — main не трогается, а вливание результата происходит на merge day. Отмечайте шаги по мере выполнения.</p>
       <div class="chips" id="chips"></div>
     </section>
 
@@ -40,14 +40,14 @@
     <section class="final-banner animate-scale-in" id="finalBanner" style="display:none">
       <div class="emoji">🚀</div>
       <h3>Всё готово! Автопилот работает.</h3>
-      <p>opencode сам проводит аудит, пишет AUDIT.md, исправляет проблемы в порядке P0 → P1, проверяет каждую правку и возвращает отчёт. Ваша работа — читать AUDIT.md и финальный отчёт, всё остальное делает opencode.</p>
+      <p>opencode сам проводит аудит, пишет AUDIT.md, исправляет проблемы в порядке P0 → P1 в отдельной ветке refactor/*, проверяет каждую правку и возвращает отчёт. На merge day агент сам разберётся с ветками и вольёт результат в main. Ваша работа — читать AUDIT.md и финальный отчёт, всё остальное делает opencode.</p>
       <p style="margin-top:12px"><button class="done-btn" id="resetBtn" type="button">Сбросить прогресс</button></p>
     </section>
 
     <!-- Подвал -->
     <footer class="footer">
       <p class="mono">opencode Autopilot Guide</p>
-      <p id="footerCount">0 из 4 выполнено</p>
+      <p id="footerCount">0 из 5 выполнено</p>
     </footer>
 
   </main>
